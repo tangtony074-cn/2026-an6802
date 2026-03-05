@@ -14,5 +14,13 @@ def main():
 def ethics():
     return(render_template("ethics.html"))
 
+@app.route("/correct", methods = ["get", "post"])
+def correct():
+    return(render_template("correct.html"))
+
+@app.route("/wrong", methods = ["get", "post"])
+def wrong():
+    return(render_template("wrong.html"))
+
 if __name__ == "__main__":
     app.run()
